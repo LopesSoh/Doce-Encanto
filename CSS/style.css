@@ -65,6 +65,19 @@ header h3 {
     flex-direction: column;
     align-items: center;
   }
+.capa_tortas{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/produto-assets/torta_limao.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
 .capa h1{
     display: flex;
@@ -645,4 +658,26 @@ header h3 {
 .selecao {
     margin-top: 120px; 
 }
+
+/* Outros */
+.outro {
+    margin-top: 120px;
+}
+
+.outro input {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #ff8ac0;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: "Cinzel", serif;
+    margin-bottom: 10px;
+}
+
+.outro input::placeholder {
+    color: #adadad;
+}
+
 /* ------------------------------------------ */
+
+.cap
