@@ -158,8 +158,31 @@ header h3 {
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
     line-height: 1.6;
+    text-align: justify;
     z-index: 10;
 }
+
+.historia-conteudo .historia-texto p {
+    text-align: justify;
+    margin-bottom: 20px;
+
+    /* A mágica está aqui */
+    text-indent: 35px;   /* puxa a primeira linha para a esquerda */
+    padding-left: 25px;   /* empurra todo o parágrafo pra direita */
+    position: relative;
+}
+
+.historia-conteudo .historia-texto p::before {
+    content: "~";
+    position: absolute;
+    left: 0;               /* agora o ~ fica dentro do bloco */
+    top: 0;
+    font-size: 26px;
+    color: #BD3459;
+    font-weight: bold;
+    line-height: 1;        /* evita subir ou descer demais */
+}
+
 
 /* FAIXAS */
 .faixa-1 {
