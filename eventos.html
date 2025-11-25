@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Eventos</title>
+    <link rel="shortcut icon" type="image/png" href="Assets/logo.png"/>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -30,9 +31,24 @@
       <form>
         <label class="titulo">Nome Completo</label>
 
+        <!-- Nome Completo -->
         <div class="nome">
             <input type="text" name="primeiro_nome" placeholder="PRIMEIRO NOME" required>
             <input type="text" name="ultimo_nome" placeholder="ÚLTIMO NOME" required>
+        </div>
+
+
+        <!-- E-mail + Telefone -->
+        <div class="campo duplo">
+            <div class="campo-item">
+                <label class="titulo">E-mail</label>
+                <input type="email" placeholder="sophia.cardoso@gmail.com" required>
+            </div>
+
+            <div class="campo-item">
+                <label class="titulo">Telefone</label>
+                <input type="tel" placeholder="(99) 99999-9099" required>
+            </div>
         </div>
 
       </form>

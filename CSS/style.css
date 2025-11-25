@@ -86,60 +86,124 @@ header h3 {
 /* ------------------------------------------ */
 
 /* ------------------Index------------------- */
+.fundo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: white; /* parte branca em cima */
+  overflow: hidden;
+}
 
+/* FAIXAS */
+.faixa {
+    position: absolute;
+    width: 200%;
+    height: 120px;
+    left: -50%;
+    transform: rotate(-30deg);
+    box-shadow: -10 80px 160px rgba(50,50,50,0.15);
+}
+
+/* primeira (rosa mais forte) */
+.f1 {
+  background: #ffb3c9;
+  bottom: -120px;
+}
+
+/* segunda */
+.f2 {
+  background: #ffc6d7;
+  bottom: -240px;
+}
+
+/* terceira (rosa claro) */
+.f3 {
+  background: #ffe1eb;
+  bottom: -352px;
+}
 
 /* ------------------------------------------ */
 
 
 /* ------------------Produtos--------------- */
+/* tortas */
 .tortas {
-    display: grid;
-    place-items: center; /* agora funciona */
-    width: 320px; /* igual a largura da imagem */
     position: relative;
+    width: 361px;     /* igual ao tamanho da imagem */
 }
 
 .torta_limao {
-    width: 320px;
+    width: 100%;
     border-radius: 25px;
-    display: block;
 }
 
 .botao1 {
-    padding: 10px 20px;
-    background: pink;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
     border: none;
-    border-radius: 8px;
+    text-align: center;
+    color: black;
     font-weight: bold;
     cursor: pointer;
-    z-index: 1; /* para ficar por cima */
+    display: block;
+    transition: background 0.3s ease;
 }
 
+.botao1:hover {
+    background: #ff7fa6;
+}
+/* macarron */
+.macarron {
+    position: relative;
+    width:361px;
+}
+
+.macarron_rosa{
+    width:100%;
+    border-radius: 25px;
+}
+
+.botao2{
+position: absolute;
+    bottom: 50px;  
+    left: 0;
+
+    width: 100%;           
+    padding: 18px ;  
+    background: #ffb2c7;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
 
 
 /* ------------------Eventos---------------- */
 
 .login-box {
-    background-color: #FFC5D5;
-    width: 670px;
-    margin: 30px auto;
-    margin-top: 90px;
-    margin-left: 300px;
-    margin-bottom: 0px;
-    padding: 22px;
-    border-radius: 8px 8px 0px 0px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1)
+    background: #f8b9c9;
+    width: 80%;
+    margin: -60px auto 0;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    position: relative;
+    
 }
 
 .login-box h2 {
-    margin-top: 25px;
-    margin-bottom: 2px;
+    margin-top: 0 auto;
+    margin-bottom: 40px;
     text-align: center;
     color: #BD3459;
     text-decoration: none;
     font-family: "Cinzel", serif;
+    font-size: 45px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
 }
 
 /* label */
@@ -153,15 +217,15 @@ header h3 {
 
 .nome {
     display: flex;
-    gap: 65px;
+    gap: 200px;
 }
 
 /* Campos */
 .nome input {
-    width: 270px;
-    padding: 12px 15px;
+    width: 300px;
+    padding: 15px 10px;
     border: 2px solid #ff8ac0;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: 15px;
     font-family: "Cinzel", serif;
 }
@@ -169,4 +233,6 @@ header h3 {
 .nome input::placeholder {
     color: #adadad;
 }
+
+.campo-duplo
 /* ------------------------------------------ */
