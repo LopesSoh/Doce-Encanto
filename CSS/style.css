@@ -128,12 +128,45 @@ header h3 {
     z-index: 0;  /* fundo fica atrás */
 }
 
+.historia-conteudo {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+    z-index: 10; /* fica acima das faixas */
+}
+
+.historia-conteudo .historia-img {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 350px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    z-index: 10;
+}
+
+.historia-conteudo .historia-texto {
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 650px;
+    background: #FFECF1;
+    padding: 25px 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    z-index: 10;
+}
+
 /* FAIXAS */
 .faixa-1 {
     position: absolute;
     z-index: 0;  /* corrigido */
     width: 200%;
-    height: 200px;
+    height: 219px;
     left: -50%;
     transform: rotate(30deg);
     box-shadow: 20px -2px 9px rgba(0, 0, 0, 0.27);
@@ -161,7 +194,7 @@ header h3 {
     position: absolute; 
     z-index: 0;
     width: 200%;
-    height: 200px;
+    height: 219px;
     left: -50%;
     transform: rotate(-30deg);
     box-shadow: 20px -2px 9px rgba(0, 0, 0, 0.27);
