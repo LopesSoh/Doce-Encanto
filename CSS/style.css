@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+/* Geral */
 * {
     margin: 0;
     padding: 0;
@@ -25,10 +27,32 @@ header h3 {
     font-size: 24px;
     color: #ffffff;
     margin: 0 15px;
+    padding: 40px;
 }
-a {
+
+.menuu {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.menuu a{
     text-decoration: none;
     color:black;
     font-family: "Cinzel", serif;
     font-style: normal;
+    font-weight: 300;
 }
+
+/* ------------------------------------------ */
+
+/* ------------------Index------------------- */
+
+
+/* ------------------------------------------ */
+
+
+
+/* ------------------Eventos---------------- */
+
+
+/* ------------------------------------------ */
