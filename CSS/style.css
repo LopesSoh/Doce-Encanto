@@ -17,13 +17,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
-    position: fixed;
+    padding: 20px 40px;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 999999;
 }
 
 header img.logo {
-    height: 200px;
-    padding: 40px;
+    height: 80px;
+    padding: 0px;
 }
 
 header h3 {
@@ -36,7 +39,7 @@ header h3 {
 
 .menuu {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
 .menuu a{
@@ -48,15 +51,15 @@ header h3 {
 }
 
 .capa {
-    
+
     background-image:
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('/Assets/bolo-capa.jpg');
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;                   
-    justify-content: center;         
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
   }
@@ -83,7 +86,7 @@ header h3 {
     font-weight: normal;
     color: white;
     text-align: center;
-    margin-top: 10px;   
+    margin-top: 10px;
 }
 
 /* ------------------------------------------ */
@@ -94,24 +97,23 @@ header h3 {
     height: 800px;
     position: relative;
     background: white;
-    overflow: hidden;
+    overflow: hidden/* opcional */
 }
 
 /* FUNDO FIXO */
-.fundo {
-    position: fixed;
+.nossa-historia .fundo {
+    position: relative;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    overflow: hidden;
 }
 
 /* FAIXAS */
 .faixa-1 {
-    position: absolute;
+    position: absolute;  /* corrigido */
     width: 200%;
-    height: 120px;
+    height: 200px;
     left: -50%;
     transform: rotate(30deg);
     box-shadow: 20px -2px 9px rgba(0, 0, 0, 0.27);
@@ -120,19 +122,45 @@ header h3 {
 /* primeira (rosa mais forte) */
 .f1 {
     background: #FFB2C7;
-    bottom: 0;
+    bottom: -150PX;
 }
 
 /* segunda */
 .f2 {
     background: #FFC5D5;
-    bottom: -120px;
+    bottom: -250px;
 }
 
 /* terceira (rosa claro) */
 .f3 {
     background: #FFD9E3;
-    bottom: -240px;
+    bottom: -350px;
+}
+
+.faixa-2 {
+    position: absolute;  /* corrigido */
+    width: 200%;
+    height: 200px;
+    left: -50%;
+    transform: rotate(-30deg);
+    box-shadow: 20px -2px 9px rgba(0, 0, 0, 0.27);
+}
+
+.f4 {
+    background: #FFB2C7;
+    bottom: -150PX;
+}
+
+/* segunda */
+.f5 {
+    background: #FFC5D5;
+    bottom: 250px;
+}
+
+/* terceira (rosa claro) */
+.f6 {
+    background: #FFD9E3;
+    bottom: 350px;
 }
 
 
@@ -141,7 +169,7 @@ header h3 {
 
 /* ------------------Produtos--------------- */
 /* tortas */
-.tipos {
+.tipo1 , .tipo2 , .tipo3 {
     display: flex;
     justify-content: space-between; /* Alinha o título e o botão nas extremidades */
     justify-content: center;     /* centralizado */
@@ -171,8 +199,8 @@ header h3 {
     cursor: pointer;
     display: block;
     transition: background 0.3s ease;
-    font-family: "Open Sans", sans-serif; 
-   
+    font-family: "Open Sans", sans-serif;
+
 }
 
 .botao1:hover {
@@ -184,12 +212,12 @@ header h3 {
     width:361px;
 }
 
-.macarron_rosa{
+.macarron_rosa {
     width:100%;
     border-radius: 25px;
 }
 
-.botao2{
+.botao2 {
     position: absolute;
     bottom: 50px;
     left: 0;
@@ -202,12 +230,238 @@ header h3 {
     cursor: pointer;
     display: block;
     transition: background 0.3s ease;
-    font-family: "Open Sans", sans-serif; 
+    font-family: "Open Sans", sans-serif;
 }
 .botao2:hover {
     background: #ff7fa6;
 }
+/* docinhos------------------------------------ */
+.docinhos {
+    position: relative;
+    width:361px;
+}
 
+.docinho{
+    width:100%;
+    border-radius: 25px;
+
+}
+.botao3{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
+    border: none;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+.botao3:hover {
+    background: #ff7fa6;
+}
+
+/* mousse -------------------------- */
+.mousses{
+    position: relative;
+    width:361px;
+}
+.mousse{
+    width:100%;
+    border-radius: 25px;
+}
+.botao4{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
+    border: none;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+.botao4:hover {
+    background: #ff7fa6;
+}
+/* eclair --------------------------------*/
+.eclairs {
+    position: relative;
+    width:361px;
+}
+.eclair {
+    width:100%;
+    border-radius: 25px;
+}
+.botao5 {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
+    border: none;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+
+.botao5:hover {
+    background: #ff7fa6;
+}
+
+/* fundues------------------------------------------------- */
+.foundes {
+    position: relative;
+    width:361px;
+}
+.founde {
+    width:100%;
+    border-radius: 25px;
+}
+.botao6 {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
+    border: none;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+.botao6:hover {
+    background: #ff7fa6;
+}
+
+/* pudin------------------------------------ */
+.pudins {
+    position: relative;
+    width:361px;
+}
+
+.pudin {
+    width:100%;
+    border-radius: 25px;
+}
+.botao7 {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
+    border: none;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+.botao7:hover {
+    background: #ff7fa6;
+}
+
+/* biscoito --------------------------------------------- */
+.biscoitos {
+    position: relative;
+    width:361px;
+}
+.biscoito {
+    width:100%;
+    border-radius: 25px;
+}
+.botao9{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
+    border: none;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+.botao9:hover {
+    background: #ff7fa6;
+}
+
+/* bolo ------------------------------------------- */
+.bolos {
+    position: relative;
+    width:361px;
+}
+.bolo {
+    width:100%;
+    border-radius: 25px;
+}
+.botao10{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
+    border: none;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+.botao10:hover {
+    background: #ff7fa6;
+}
+ 
+/* combos ---------------------------------- */
+.combos {
+    position: relative;
+    width:361px;
+}
+.combo {
+    width:100%;
+    border-radius: 25px;
+}
+
+.botao11 {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
+    border: none;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+}
+.botao2:hover {
+    background: #ff7fa6;
+}
 /* ------------------Eventos---------------- */
 
 .login-box {
@@ -218,7 +472,7 @@ header h3 {
     border-radius: 5px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.15);
     position: relative;
-    
+
 }
 
 .login-box h2 {
@@ -287,19 +541,29 @@ header h3 {
     padding: 20px;
     font-size: 24px;
     font-family: "Cinzel", serif;
-    color: #333;
+    color: #333;                 
+    background-color: #fff;      
     border: 3px solid #ff64b0;
     border-radius: 25px;
     cursor: pointer;
-    box-sizing: border-box;
+    transition: .3s;
+    background-color: #ffe8f2; 
+    border: 3px solid #e91e63; 
+    color: #e91e63; 
+    font-weight: bold;
 }
 
-/* estilo das opções */
-.select-evento option {
-    padding: 20px;
-    font-size: 24px;
-    font-family: "Cinzel", serif;
-    border-bottom: 1px solid #ff9aff;
+/* Efeito de hover/foco (opcional) */
+.select-evento:hover,
+.select-evento:focus {
+    border-color: #BD3459;
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
+}
+
+/* Estilo para a opção 'Selecione o Evento' desabilitada */
+.select-evento option:disabled {
+    color: #adadad;
+    font-weight: normal;
 }
 
 /* ------------------------------------------ */
