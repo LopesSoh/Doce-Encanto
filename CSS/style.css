@@ -68,7 +68,19 @@ header h3 {
 
 
 .capa h1{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+   
 }
 
 .capa h3{
