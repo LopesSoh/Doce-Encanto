@@ -1,7 +1,7 @@
 <table>
   <tr>
     <td>
-  <img src="https://github.com/user-attachments/assets/aa655d21-7974-469f-924a-263e67a5a334"> 
+  <img src="https://github.com/user-attachments/assets/aa655d21-7974-469f-924a-263e67a5a334" width="40"/> 
     </td>
     <td>
       <h1>Doce Encanto → "Sinta o Gosto da Magia"</h1> 
