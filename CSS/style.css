@@ -244,6 +244,12 @@ h2{
 }
 
 /* ---- Nossos Numeros */
+.nossos-numeros{
+    background-image: url('/Assets/Index-assets/fundo-numeros.png');
+
+}
+
+
 .nossas-unidades {
     width: 100%;
     min-height: 100vh;
@@ -269,6 +275,7 @@ h2{
     width: 300px;
     text-align: center;
     position: relative;
+    padding-left: 20px;
 }
 
 /* Container da imagem (para segurar a faixa rosa) */
@@ -279,6 +286,7 @@ h2{
     overflow: hidden;
     border-radius: 30px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    margin-bottom: 200px;
 }
 
 /* A imagem em si */
@@ -292,7 +300,7 @@ h2{
 /* Faixa rosa — idêntica à da arte */
 .faixa-nome {
     position: absolute;
-    bottom: 20px;
+    bottom: 75px;
     width: 100%;
     background: rgba(255, 178, 199, 0.75);
     color: #000000;
@@ -309,12 +317,148 @@ h2{
 }
 
 /* Texto dos endereços */
-.endereco-unidade {
-    margin-top: 15px;
+.unidade-card p {
     font-family: "Open Sans", sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 1.4;
     color: #000;
+    margin-top: 150px;
+    font-weight: bold;
+    position: relative;
+    top: -150px;
+}
+
+/* missao-visao-valores */
+
+.missao-visao {
+    width: 100%; 
+    height: 800px; 
+    position: relative; 
+    background: white; 
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* FUNDO FIXO */
+.nossa-historia .fundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;  /* fundo fica atrás */
+}
+
+.missao-conteudo {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+    z-index: 10; /* fica acima das faixas */
+}
+
+.missa-conteudo .missao-img {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 350px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    z-index: 10;
+}
+
+.missao-conteudo .missao-texto {
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 650px;
+    background: #FFECF1;
+    padding: 25px 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: justify;
+    z-index: 10;
+}
+
+.missao-conteudo .missao-texto p {
+    text-align: justify;
+    margin-bottom: 20px;
+
+    /* A mágica está aqui */
+    text-indent: 35px;   /* puxa a primeira linha para a esquerda */
+    padding-left: 25px;   /* empurra todo o parágrafo pra direita */
+    position: relative;
+}
+
+.missao-conteudo .missao-texto p::before {
+    content: "~";
+    position: absolute;
+    left: 0;               /* agora o ~ fica dentro do bloco */
+    top: 0;
+    font-size: 26px;
+    color: #BD3459;
+    font-weight: bold;
+    line-height: 1;        /* evita subir ou descer demais */
+}
+
+/* FAIXAS */
+.faixa-3 {
+    position: absolute;
+    z-index: 0;  /* corrigido */
+    width: 200%;
+    height: 219px;
+    left: -50%;
+    transform: rotate(-120deg);
+    box-shadow: 20px -2px 9px rgba(0, 0, 0, 0.27);
+}
+
+/* primeira (rosa mais forte) */
+.f7 {
+    background: #FFB2C7;
+    top: 750PX;
+}
+
+/* segunda */
+.f8 {
+    background: #FFC5D5;
+    top: 850px;
+}
+
+/* terceira (rosa claro) */
+.f9 {
+    background: #FFD9E3;
+    top: 950px;
+}
+
+.faixa-4 {
+    position: absolute; 
+    z-index: 0;
+    width: 200%;
+    height: 219px;
+    left: -50%;
+    transform: rotate(-30deg);
+    box-shadow: 20px -2px 9px rgba(0, 0, 0, 0.27);
+
+}
+
+.f10 {
+    background: #FFB2C7;
+    top: 750PX;
+}
+
+/* segunda */
+.f11 {
+    background: #FFC5D5;
+    top: 850px;
+}
+
+/* terceira (rosa claro) */
+.f12 {
+    background: #FFD9E3;
+    top: 950px;
 }
 
 
