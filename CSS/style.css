@@ -244,104 +244,79 @@ h2{
 }
 
 /* ---- Nossos Numeros */
-.nossos-numeros {
-    background-image:
-      url('/Assets/Index-assets/fundo-numeros.png');
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* ---- Nossas unidades ---- */
 .nossas-unidades {
-    width: 100%; 
-    height: 800px; 
-    position: relative; 
-    background: white; 
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: white;
     overflow: hidden;
     z-index: 0;
 }
 
-.nossas-unidades .fundo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;  /* fundo fica atrás */
-}
-
-.nossas-unidades .unidades-conteudo {
-    position: relative;
+/* Container dos 3 cards */
+.unidades-conteudo {
     margin-top: 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
-    gap: 40px;
-    z-index: 10; /* fica acima das faixas */
-}
-
-.nossas-unidades .unidade-img {
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 350px;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    gap: 60px;
+    flex-wrap: wrap;
     z-index: 10;
 }
 
-.nossas-unidades .unidade-texto {
-    margin-top: 50px;
-    margin-right: 50px;
-    width: 650px;
-    background: #FFECF1;
-    padding: 25px 30px;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    font-family: "Open Sans", sans-serif;
-    font-size: 22px;
-    line-height: 1.6;
-    text-align: justify;
-    z-index: 10;
-}
-
+/* Card inteiro */
 .unidade-card {
+    width: 300px;
+    text-align: center;
     position: relative;
-    width: 350px; /* mesmo tamanho da sua unidade-img */
 }
 
-/* sua classe original não foi mexida */
+/* Container da imagem (para segurar a faixa rosa) */
+.img-container {
+    position: relative;
+    width: 250px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* A imagem em si */
 .unidade-img {
     width: 100%;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
-/* A faixa rosa IGUAL à da imagem que você mandou */
+/* Faixa rosa — idêntica à da arte */
 .faixa-nome {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     width: 100%;
-    background: rgba(255, 182, 201, 0.75);
-    color: #4a2c2c;
+    background: rgba(255, 178, 199, 0.75);
+    color: #000000;
     font-family: "Open Sans", sans-serif;
-    font-size: 22px;
-    text-align: center;
+    font-size: 20px;
     padding: 12px 0;
-    border-radius: 0 0 25px 25px;
     backdrop-filter: blur(2px);
+    transition: 0.2s ease;
 }
 
 .faixa-nome:hover {
-    background: rgba(255, 182, 201, 1);
+    background: rgba(250, 99, 176, 0.75);
+    color: #ffffff;
 }
 
+/* Texto dos endereços */
+.endereco-unidade {
+    margin-top: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #000;
+}
 
-   
 
 
 
