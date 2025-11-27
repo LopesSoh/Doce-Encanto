@@ -1,5 +1,5 @@
-<h1>
-  <img src="https://github.com/user-attachments/assets/aa655d21-7974-469f-924a-263e67a5a334" width="100" style="vertical-align: middle; margin-bottom: -6px;"/> 
+<h1 style="vertical-align: middle; margin-bottom: -6px;">
+  <img src="https://github.com/user-attachments/assets/aa655d21-7974-469f-924a-263e67a5a334"> 
   Doce Encanto → "Sinta o Gosto da Magia" 
 </h1>
 
