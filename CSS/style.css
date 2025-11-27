@@ -948,6 +948,7 @@ h2{
 }
 
 /* ------------------------------------------ */
+
 /* tortas --------------------------------------- */
 .capa_tortas{
 
@@ -980,6 +981,104 @@ h2{
 }
 
 .capa_tortas h3 {
+    font-size: 30px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container da torta */
+.torta1, .torta2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+.torta3{
+    width: 100%;
+
+    justify-content: space-between; /* Alinha o título e o botão nas extremidades */
+    justify-content: left;     /* centralizado */
+    gap: 40px;                    /* espaço entre as imagens */
+    margin-top: 50px;
+    margin-left: 51px;
+}
+
+.torta_limaos, .torta_morango_brancos,.torta_beijinho_brigadeiros , .torta_chocolate_morangos, .torta_chocolates, .torta_maracujas, .torta_brancos{
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem */
+.torta_limao, .torta_morango_branco, .torta_beijinho_brigadeiro , .torta_chocolate_morango , .torta_chocolate, .torta_maracuja, .torta_branco {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.torta_limaos:hover , .torta_morango_brancos:hover,.torta_beijinho_brigadeiros:hover ,.torta_chocolate_morangos:hover ,.torta_chocolates:hover ,.torta_maracujas:hover ,.torta_brancos:hover  {
+    transform: scale(1.15);
+}
+
+/* Faixa rosa */
+.titulo1 , .titulo2, .titulo3 , .titulo4 , .titulo5 , .titulo6 , .titulo7{
+   position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
+    text-align: center;
+    color: black;
+    
+    transition: opacity 0.3s ease;
+}
+
+/* Esconde faixa no hover da div toda */
+.torta_limaos:hover a,.torta_morango_brancos:hover a,.torta_beijinho_brigadeiros:hover a,.torta_chocolate_morangos:hover a,.torta_chocolates:hover a,.torta_maracujas:hover a,.torta_brancos:hover a {
+    opacity: 0;
+}
+
+/* macarons--------------------------- */
+
+.capa_macarons{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/produto-assets/macaron_rosa_grande.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.capa_macarons h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+
+}
+
+.capa_macarons h3 {
     font-size: 30px;
     font-family: Cinzel;
     font-weight: normal;
