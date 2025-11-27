@@ -64,6 +64,7 @@ header h3 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    z-index: 9999;
   }
 
 
@@ -249,12 +250,21 @@ header h3 {
       url('/Assets/Index-assets/fundo-numeros.png');
     height: 100vh;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+/* ---- Nossas unidades ---- */
+.nossas-unidades {
+    width: 100%; 
+    height: 800px; 
+    position: relative; 
+    background: white; 
+    overflow: hidden;
+    z-index: 0;
 }
 
 
@@ -740,6 +750,7 @@ header h3 {
 }
 
 /* ------------------------------------------ */
+/* tortas --------------------------------------- */
 .capa_tortas{
 
     background-image:
@@ -777,4 +788,54 @@ header h3 {
     color: white;
     text-align: center;
     margin-top: 10px;
+}
+
+/* Container da torta */
+.torta1, .torta2, .torta3 {
+    
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between; /* Alinha o título e o botão nas extremidades */
+    justify-content: center;     /* centralizado */
+    gap: 40px;                    /* espaço entre as imagens */
+    margin-top: 50px;
+}
+
+.torta_limaos, .torta_morango_brancos,.torta_beijinho_brigadeiros , .torta_chocolate_morangos, .torta_chocolates, .torta_maracujas, .torta_brancos{
+    position: relative;
+    width: 361px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+/* Imagem */
+.torta_limao, .torta_morango_branco, .torta_beijinho_brigadeiro , .torta_chocolate_morango , .torta_chocolate, .torta_maracuja, .torta_branco {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.torta_limao:hover , .torta_morango_branco:hover, .torta_beijinho_brigadeiro:hover, .torta_chocolate_morango:hover , .torta_chocolate:hover,.torta_maracuja:hover , .torta_branco:hover {
+    transform: scale(1.15);
+}
+
+/* Faixa rosa */
+.titulo1 , .titulo2, .titulo3 , .titulo4 , .titulo5 , .titulo6 , .titulo7{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: #ffb2c7;
+    text-align: center;
+    color: black;
+    transition: opacity 0.3s ease;
+}
+
+/* Esconde faixa no hover da div toda */
+.titulo1:hover , .titulo2:hover , .titulo3:hover , .titulo4:hover , .titulo5:hover , .titulo6:hover , .titulo7:hover{
+    opacity: 0;
 }
