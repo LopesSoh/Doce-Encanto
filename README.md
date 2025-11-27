@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/aa655d21-7974-469f-924a-263e67a5a334" width="48">  # Doce Encanto → "Sinta o Gosto da Magia"
+#<img src="https://github.com/user-attachments/assets/aa655d21-7974-469f-924a-263e67a5a334" width="48">  Doce Encanto → "Sinta o Gosto da Magia"
 
 ![Image](https://github.com/user-attachments/assets/df323e75-53df-4230-ade8-6e5cc76ffbdb)
 
