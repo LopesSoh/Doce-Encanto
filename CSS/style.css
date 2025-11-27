@@ -266,6 +266,83 @@ h2{
     z-index: 0;
 }
 
+.nossas-unidades .fundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;  /* fundo fica atrás */
+}
+
+.nossas-unidades .unidades-conteudo {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+    z-index: 10; /* fica acima das faixas */
+}
+
+.nossas-unidades .unidade-img {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 350px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    z-index: 10;
+}
+
+.nossas-unidades .unidade-texto {
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 650px;
+    background: #FFECF1;
+    padding: 25px 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: justify;
+    z-index: 10;
+}
+
+.unidade-card {
+    position: relative;
+    width: 350px; /* mesmo tamanho da sua unidade-img */
+}
+
+/* sua classe original não foi mexida */
+.unidade-img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/* A faixa rosa IGUAL à da imagem que você mandou */
+.faixa-nome {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 182, 201, 0.75);
+    color: #4a2c2c;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 0 0 25px 25px;
+    backdrop-filter: blur(2px);
+}
+
+.faixa-nome:hover {
+    background: rgba(255, 182, 201, 1);
+}
+
+
+   
+
 
 
 
