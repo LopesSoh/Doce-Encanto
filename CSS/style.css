@@ -68,8 +68,8 @@ h2{
 .capa {
 
     background-image:
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('/Assets/bolo-capa.jpg');
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/Assets/bolo-capa.jpg');
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -78,7 +78,7 @@ h2{
     flex-direction: column;
     align-items: center;
     z-index: 9999;
-  }
+}
 
 
 .capa h1{
@@ -94,7 +94,6 @@ h2{
     height: 190px;
     border-radius: 25px;
     margin-top: 150px;
-   
 }
 
 .capa h3{
@@ -138,6 +137,7 @@ h2{
     align-items: flex-start;
     gap: 40px;
     z-index: 10; /* fica acima das faixas */
+    
 }
 
 .historia-conteudo .historia-img {
@@ -147,6 +147,7 @@ h2{
     border-radius: 25px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.25);
     z-index: 10;
+
 }
 
 .historia-conteudo .historia-texto {
@@ -309,6 +310,7 @@ h2{
     padding: 12px 0;
     backdrop-filter: blur(2px);
     transition: 0.2s ease;
+    cursor: pointer;
 }
 
 .faixa-nome:hover {
@@ -340,7 +342,7 @@ h2{
 }
 
 /* FUNDO FIXO */
-.nossa-historia .fundo {
+.missao-visao .fundo {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -349,119 +351,62 @@ h2{
     z-index: 0;  /* fundo fica atrás */
 }
 
-.missao-conteudo {
-    position: relative;
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 40px;
-    z-index: 10; /* fica acima das faixas */
-}
-
-.missa-conteudo .missao-img {
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 350px;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-    z-index: 10;
-}
-
-.missao-conteudo .missao-texto {
-    margin-top: 50px;
-    margin-right: 50px;
-    width: 650px;
-    background: #FFECF1;
-    padding: 25px 30px;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    font-family: "Open Sans", sans-serif;
-    font-size: 22px;
-    line-height: 1.6;
-    text-align: justify;
-    z-index: 10;
-}
-
-.missao-conteudo .missao-texto p {
-    text-align: justify;
-    margin-bottom: 20px;
-
-    /* A mágica está aqui */
-    text-indent: 35px;   /* puxa a primeira linha para a esquerda */
-    padding-left: 25px;   /* empurra todo o parágrafo pra direita */
-    position: relative;
-}
-
-.missao-conteudo .missao-texto p::before {
-    content: "~";
-    position: absolute;
-    left: 0;               /* agora o ~ fica dentro do bloco */
-    top: 0;
-    font-size: 26px;
-    color: #BD3459;
-    font-weight: bold;
-    line-height: 1;        /* evita subir ou descer demais */
-}
-
 /* FAIXAS */
-.faixa-3 {
+.faixa-1a {
     position: absolute;
     z-index: 0;  /* corrigido */
     width: 200%;
     height: 219px;
     left: -50%;
-    transform: rotate(-120deg);
+    transform: rotate(-30deg);
     box-shadow: 20px -2px 9px rgba(0, 0, 0, 0.27);
 }
 
 /* primeira (rosa mais forte) */
-.f7 {
+.f1a {
     background: #FFB2C7;
     top: 750PX;
 }
 
 /* segunda */
-.f8 {
+.f2a {
     background: #FFC5D5;
     top: 850px;
 }
 
 /* terceira (rosa claro) */
-.f9 {
+.f3a {
     background: #FFD9E3;
     top: 950px;
 }
 
-.faixa-4 {
+.faixa-2a {
     position: absolute; 
     z-index: 0;
     width: 200%;
     height: 219px;
     left: -50%;
-    transform: rotate(-30deg);
-    box-shadow: 20px -2px 9px rgba(0, 0, 0, 0.27);
+    transform: rotate(30deg);
+    box-shadow: 20px 2px 9px rgba(0, 0, 0, 0.27);
 
 }
 
-.f10 {
+.f4a {
     background: #FFB2C7;
-    top: 750PX;
+    top: -170PX;
 }
 
 /* segunda */
-.f11 {
+.f5a {
     background: #FFC5D5;
-    top: 850px;
+    top: -270px;
 }
 
 /* terceira (rosa claro) */
-.f12 {
+.f6a {
     background: #FFD9E3;
-    top: 950px;
+    top: -370px;
 }
-
-
 
 
 
