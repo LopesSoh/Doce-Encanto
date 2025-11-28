@@ -364,7 +364,8 @@ h2{
 .item {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    gap: 0;
+    margin-left: 50px;
     position: relative;
 }
 
@@ -373,16 +374,15 @@ h2{
     display: none;
 }
 
-/* imagem + botão lateral */
+/* imagem + barra rosa */
 .img-box {
-    margin-top: 50px;
     width: 120px;
     height: 150px;
     border-radius: 25px;
     overflow: hidden;
     position: relative;
-    display: block;
     cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 
 .img-box img {
@@ -391,7 +391,7 @@ h2{
     object-fit: cover;
 }
 
-/* botao da seta */
+/* barra da seta */
 .btn {
     position: absolute;
     right: 0;
@@ -409,32 +409,37 @@ h2{
     transform: rotate(90deg);
 }
 
-/* caixa de texto */
+/* CAIXA DE TEXTO QUE VAI SE ESTICAR */
 .texto {
     background: #FF5F9E;
     color: white;
-    padding: 20px;
-    border-radius: 20px;
-    max-width: 600px;
-    margin-left: 20px;
-    opacity: 0;
-    max-width: 0;
-    overflow: hidden;
-    white-space: wrap;
-    transition: all .4s ease;
-}
-
-/* quando clicar → abre pro lado */
-.item input:checked ~ .texto {
-    max-width: 600px;
-    opacity: 1;
+    border-radius: 25px;
     padding: 20px 25px;
+
+    /* começa fechada */
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: normal;
+
+    /* para animar suavemente */
+    transition: 
+        width .5s ease,
+        opacity .4s ease;
+    margin-left: 15px;
 }
 
-/* seta gira */
-.item input:checked + label .arrow {
-    transform: rotate(180deg);
+/* QUANDO MARCAR O CHECKBOX → EXPANDE PRO LADO */
+.item input:checked ~ .texto {
+    width: 650px;   /* TAMANHO DA EXPANSÃO ATÉ O FINAL DA PÁGINA */
+    opacity: 1;
 }
+
+/* gira seta */
+.item input:checked + label .arrow {
+    transform: rotate(-90deg);
+}
+
 
 /* FAIXAS */
 .faixa-1a {
