@@ -341,14 +341,99 @@ h2{
     z-index: 0;
 }
 
+.missao-visao h3 {
+    margin: 0 auto;
+    text-align: center;
+    color: #BD3459;
+    font-family: "Cinzel", serif;
+    font-size: 45px;
+    font-weight: normal;
+    z-index: 10;
+}
+
 /* FUNDO FIXO */
 .missao-visao .fundo {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 1000%;
     top: 0;
     left: 0;
     z-index: 0;  /* fundo fica atrás */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* esconder checkbox */
+.item input {
+    display: none;
+}
+
+/* imagem + botão lateral */
+.img-box {
+    margin-top: 50px;
+    width: 120px;
+    height: 150px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* botao da seta */
+.btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 100%;
+    background: #E43D83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    transition: transform .4s ease;
+    transform: rotate(90deg);
+}
+
+/* caixa de texto */
+.texto {
+    background: #FF5F9E;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin-left: 20px;
+    opacity: 0;
+    max-width: 0;
+    overflow: hidden;
+    white-space: wrap;
+    transition: all .4s ease;
+}
+
+/* quando clicar → abre pro lado */
+.item input:checked ~ .texto {
+    max-width: 600px;
+    opacity: 1;
+    padding: 20px 25px;
+}
+
+/* seta gira */
+.item input:checked + label .arrow {
+    transform: rotate(180deg);
 }
 
 /* FAIXAS */
@@ -408,7 +493,28 @@ h2{
     top: -370px;
 }
 
+/* beijinho e brigadeiro parallax */
+.img-brigadeiro{
+    background-image:
+        url('/Assets/Index-assets/brigadeiro-index.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;                   /* método moderno e simples */
+    justify-content: center;         /* centraliza horizontalmente */
+    align-items: center;
+}
 
+.img-beijinho{
+    background-image:
+        url('/Assets/Index-assets/beijinho-index.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;                   /* método moderno e simples */
+    justify-content: center;         /* centraliza horizontalmente */
+    align-items: center;
+}
 
 
 /* ------------------------------------------ */
