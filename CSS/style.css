@@ -1218,3 +1218,84 @@ h2{
     display: flex;
     flex-direction: column;
 }
+
+/* docinhos ---------------------------------------------------- */
+.capa_docinhos{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/docinhos-assets/docinho_maracuja_grande.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.capa_docinhos h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+
+}
+
+.capa_docinhos h3 {
+    font-size: 30px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container da torta */
+.docinho1 , .docinho2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    
+}
+
+
+.docinho_brigadeiro_beijinhos, .docinho_brancos, .docinho_maracujas , .docinho_chocolates , .docinho_morangos , .docinho_roxos {
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem */
+.docinho_brigadeiro_beijinho , .docinho_branco , .docinho_maracuja , .docinho_chocolate , .docinho_morango , .docinho_roxo {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.docinho_brigadeiro_beijinhos:hover , .docinho_brancos:hover,.docinho_maracujas:hover ,.docinho_chocolates:hover ,.docinho_morangos:hover ,.docinho_roxos:hover  {
+    transform: scale(1.15);
+}
+
+.docinho_brigadeiro_beijinhos:hover a,.docinho_brancos:hover a,.docinho_maracujas:hover a,.docinho_chocolates:hover a,.docinho_morangos:hover a,.docinho_roxos:hover a {
+    opacity: 0;
+}
+
+
+.compre1, .compre2 , .compre3 , .compre4 , .compre5 , .compre6 {
+    display: flex;
+    flex-direction: column;
+}
