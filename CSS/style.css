@@ -1448,3 +1448,77 @@ h2{
 .eclair_romas:hover a,.eclair_chocolates:hover a,.eclair_brancos:hover a,.eclair_mangas:hover a,.eclair_morangos:hover a,.eclair_blueberrys:hover a {
     opacity: 0;
 }
+
+/* foundes--------------------------------------------------------------- */
+
+.capa_foundes{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/eclairs-assets/eclair_blueberry_grande.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.capa_foundes h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+
+}
+
+.capa_foundes h3 {
+    font-size: 30px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container da torta */
+.founde1 , .founde2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    
+}
+
+
+.founde_morango_uvas , .founde_manga_bananas , .founde_uva_marshmallows , .founde_frambuesa_kiwis , .founde_churros , .founde_morango_laranjas {
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.founde_morango_uva , .founde_manga_banana , .founde_uva_marshmallow , .founde_frambuesa_kiwi , .founde_churro , .founde_morango_laranja {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.founde_morango_uvas:hover , .founde_manga_bananas:hover,.founde_uva_marshmallows:hover ,.founde_frambuesa_kiwis:hover ,.founde_churros:hover ,.founde_morango_laranjas:hover  {
+    transform: scale(1.15);
+}
+.founde_morango_uvas:hover a,.founde_manga_bananas:hover a,.founde_uva_marshmallows:hover a,.founde_frambuesa_kiwis:hover a,.founde_churros:hover a,.founde_morango_laranjas:hover a {
+    opacity: 0;
+}
