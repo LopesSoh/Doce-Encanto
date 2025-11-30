@@ -1377,3 +1377,74 @@ h2{
 
 /* éclair- ---------------------------------------------------------- */
 
+.capa_eclairs{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/eclairs-assets/eclair_blueberry_grande.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.capa_eclairs h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+
+}
+
+.capa_eclairs h3 {
+    font-size: 30px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container da torta */
+.eclair1 , .eclair2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    
+}
+
+
+.eclair_romas , .eclair_chocolates, .eclair_brancos, .eclair_mangas, .eclair_morangos  , .eclair_blueberrys  {
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.eclair_roma, .eclair_chocolate , .eclair_branco , .eclair_manga , .eclair_morango , .eclair_blueberry {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.eclair_romas:hover , .eclair_chocolates:hover,.eclair_brancos:hover ,.eclair_mangas:hover ,.eclair_morangos:hover ,.eclair_blueberrys:hover  {
+    transform: scale(1.15);
+}
+.eclair_romas:hover a,.eclair_chocolates:hover a,.eclair_brancos:hover a,.eclair_mangas:hover a,.eclair_morangos:hover a,.eclair_blueberrys:hover a {
+    opacity: 0;
+}
