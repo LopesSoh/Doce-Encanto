@@ -1741,3 +1741,76 @@ h2{
 .mochi_morangos:hover a,.mochi_coloridos:hover a,.mochi_amarelos:hover a,.mochi_chocolates:hover a,.mochi_roxos:hover a,.mochi_brancos:hover a {
     opacity: 0;
 }
+
+/* bolos ---------------------------------------------------- */
+.capa_bolos{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/bolo-capa.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.capa_bolos h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+
+}
+
+.capa_bolos h3 {
+    font-size: 30px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container da torta */
+.bolos1 , .bolos2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    
+}
+
+
+.bolo_coloridos , .bolo_mangas , .bolo_morangos , .bolo_romas , .bolo_acais , .bolo_branco_pretos{
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.bolo_colorido , .bolo_manga , .bolo_morango , .bolo_roma , .bolo_acai , .bolo_branco_preto {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.bolo_coloridos:hover , .bolo_mangas:hover,.bolo_morangos:hover ,.bolo_romas:hover ,.bolo_acais:hover ,.bolo_branco_pretos:hover  {
+    transform: scale(1.15);
+}
+.bolo_coloridos:hover a,.bolo_mangas:hover a,.bolo_morangos:hover a,.bolo_romas:hover a,.bolo_acais:hover a,.bolo_branco_pretos:hover a {
+    opacity: 0;
+}
