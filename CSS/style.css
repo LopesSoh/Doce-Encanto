@@ -1575,23 +1575,23 @@ h2{
 }
 
 
-.pudim_caramelos, .pudim_limoas, .pudim_ninho_nutellas , .pudim_morangos , .pudim_maracujas , .pudins {
+.pudim_caramelos, .pudim_limaos, .pudim_ninho_nutellas , .pudim_morangos , .pudim_maracujas , .pudins {
     position: relative;
     width: 361px;
     border-radius: 25px;
     transition: transform 0.4s ease;
 }
 
-.pudim_caramelo , .pudim_limoa , .pudim_ninho_nutella , .pudim_morango , .pudim_maracuja , .pudin {
+.pudim_caramelo , .pudim_limao , .pudim_ninho_nutella , .pudim_morango , .pudim_maracuja , .pudin {
     width: 100%;
     border-radius: 25px;
     transition: transform 0.4s ease;
 }
 
 /* Imagem cresce quando passa o mouse */
-.pudim_caramelos:hover , .pudim_limoas:hover,.pudim_ninho_nutellas:hover ,.pudim_morangos:hover ,.pudim_maracujas:hover ,.pudins:hover  {
+.pudim_caramelos:hover , .pudim_limaos:hover,.pudim_ninho_nutellas:hover ,.pudim_morangos:hover ,.pudim_maracujas:hover ,.pudins:hover  {
     transform: scale(1.15);
 }
-.pudim_caramelos:hover a,.pudim_limoas:hover a,.pudim_ninho_nutellas:hover a,.pudim_morangos:hover a,.pudim_maracujas:hover a,.pudins:hover a {
+.pudim_caramelos:hover a,.pudim_limaos:hover a,.pudim_ninho_nutellas:hover a,.pudim_morangos:hover a,.pudim_maracujas:hover a,.pudins:hover a {
     opacity: 0;
 }
