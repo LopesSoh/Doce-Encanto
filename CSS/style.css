@@ -1301,6 +1301,78 @@ h2{
     display: flex;
     flex-direction: column;
 }
-.docinhos > a{
-    font-family: "Open Sans", sans-serif ;
+
+/* mousse ---------------------------------------------------- */
+.capa_mousses{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/mousses-assets/mousse_morango_grande.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.capa_mousses h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+
 }
+
+.capa_mousses h3 {
+    font-size: 30px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container da torta */
+.mousse1 , .mousse2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    
+}
+
+
+.mousse_morangos , .mousse_abacaxis, .mousse_chocolates , .mousse_limaos , .mousse_blueberrys , .mousse_maracujas {
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.mousse_morango , .mousse_abacaxi , .mousse_chocolate , .mousse_limao , .mousse_blueberry , .mousse_maracuja {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.mousse_morangos:hover , .mousse_abacaxis:hover,.mousse_chocolates:hover ,.mousse_limaos:hover ,.mousse_blueberrys:hover ,.mousse_maracujas:hover  {
+    transform: scale(1.15);
+}
+.mousse_morangos:hover a,.mousse_abacaxis:hover a,.mousse_chocolates:hover a,.mousse_limaos:hover a,.mousse_blueberrys:hover a,.mousse_maracujas:hover a {
+    opacity: 0;
+}
+
+
