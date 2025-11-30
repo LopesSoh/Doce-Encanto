@@ -1601,7 +1601,7 @@ h2{
 
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('/Assets/pudim-assets/pudim_ninho_nutella_grande.png');
+      url('/Assets/biscoito-assets/biscoito_grande.png');
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -1666,5 +1666,78 @@ h2{
     transform: scale(1.15);
 }
 .biscoito_vermelhos:hover a,.biscoito_natalinos:hover a,.biscoitos:hover a,.biscoito_rosas:hover a,.biscoito_chocolates:hover a,.biscoito_coloridos:hover a {
+    opacity: 0;
+}
+
+/* mochi ---------------------------------------------------- */
+.capa_mochi{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/mochi-assets/mochi_colorido_grande.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.capa_mochi h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+
+}
+
+.capa_mochi h3 {
+    font-size: 30px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container da torta */
+.mochi1 , .mochi2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    
+}
+
+
+.mochi_morangos , .mochi_coloridos , .mochi_amarelos , .mochi_chocolates , .mochi_roxos , .mochi_brancos{
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.mochi_morango , .mochi_colorido , .mochi_amarelo , .mochi_chocolate , .mochi_roxo , .mochi_branco {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.mochi_morangos:hover , .mochi_coloridos:hover,.mochi_amarelos:hover ,.mochi_chocolates:hover ,.mochi_roxos:hover ,.mochi_brancos:hover  {
+    transform: scale(1.15);
+}
+.mochi_morangos:hover a,.mochi_coloridos:hover a,.mochi_amarelos:hover a,.mochi_chocolates:hover a,.mochi_roxos:hover a,.mochi_brancos:hover a {
     opacity: 0;
 }
