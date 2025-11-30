@@ -1455,7 +1455,7 @@ h2{
 
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('/Assets/eclairs-assets/eclair_blueberry_grande.png');
+      url('/Assets/foundes-assets/founde_uva_morango_grande.png');
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -1520,5 +1520,78 @@ h2{
     transform: scale(1.15);
 }
 .founde_morango_uvas:hover a,.founde_manga_bananas:hover a,.founde_uva_marshmallows:hover a,.founde_frambuesa_kiwis:hover a,.founde_churros:hover a,.founde_morango_laranjas:hover a {
+    opacity: 0;
+}
+
+/* pudins ---------------------------------------------------- */
+.capa_pudins{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/pudim-assets/pudim_ninho_nutella_grande.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.capa_pudins h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+
+}
+
+.capa_pudins h3 {
+    font-size: 30px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container da torta */
+.pudins1 , .pudins2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    
+}
+
+
+.pudim_caramelos, .pudim_limoas, .pudim_ninho_nutellas , .pudim_morangos , .pudim_maracujas , .pudins {
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.pudim_caramelo , .pudim_limoa , .pudim_ninho_nutella , .pudim_morango , .pudim_maracuja , .pudin {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.pudim_caramelos:hover , .pudim_limoas:hover,.pudim_ninho_nutellas:hover ,.pudim_morangos:hover ,.pudim_maracujas:hover ,.pudins:hover  {
+    transform: scale(1.15);
+}
+.pudim_caramelos:hover a,.pudim_limoas:hover a,.pudim_ninho_nutellas:hover a,.pudim_morangos:hover a,.pudim_maracujas:hover a,.pudins:hover a {
     opacity: 0;
 }
