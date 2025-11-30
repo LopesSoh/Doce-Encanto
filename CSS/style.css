@@ -1595,3 +1595,76 @@ h2{
 .pudim_caramelos:hover a,.pudim_limaos:hover a,.pudim_ninho_nutellas:hover a,.pudim_morangos:hover a,.pudim_maracujas:hover a,.pudins:hover a {
     opacity: 0;
 }
+
+/* biscoito ---------------------------------------------------- */
+.capa_biscoito{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/pudim-assets/pudim_ninho_nutella_grande.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.capa_biscoito h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+
+}
+
+.capa_biscoito h3 {
+    font-size: 30px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container da torta */
+.biscoito1 , .biscoito2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    
+}
+
+
+.biscoito_vermelhos , .biscoito_natalinos , .biscoitos , .biscoito_rosas ,.biscoito_chocolates, .biscoito_coloridos {
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.biscoito_vermelho , .biscoito_natalino , .biscoito , .biscoito_rosa , .biscoito_chocolate , .biscoito_colorido {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.biscoito_vermelhos:hover , .biscoito_natalinos:hover,.biscoitos:hover ,.biscoito_rosas:hover ,.biscoito_chocolates:hover ,.biscoito_coloridos:hover  {
+    transform: scale(1.15);
+}
+.biscoito_vermelhos:hover a,.biscoito_natalinos:hover a,.biscoitos:hover a,.biscoito_rosas:hover a,.biscoito_chocolates:hover a,.biscoito_coloridos:hover a {
+    opacity: 0;
+}
