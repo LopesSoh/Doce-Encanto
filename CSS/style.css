@@ -540,7 +540,7 @@ h2{
     justify-content: left;     /* centralizado */
     gap: 40px;                    /* espaço entre as imagens */
     margin-top: 50px;
-    margin-left: 51px;
+    margin-left: 6.5%;
 }
 
 .tortas {
@@ -1812,5 +1812,85 @@ h2{
     transform: scale(1.15);
 }
 .bolo_coloridos:hover a,.bolo_mangas:hover a,.bolo_morangos:hover a,.bolo_romas:hover a,.bolo_acais:hover a,.bolo_branco_pretos:hover a {
+    opacity: 0;
+}
+
+/* combos ---------------------------------------------------- */
+.capa_combos{
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/Assets/bolo-capa.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.capa_combos h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    border: 4.5px, solid, white;
+    width: 700px;
+    height: 190px;
+    border-radius: 25px;
+    margin-top: 150px;
+
+}
+
+.capa_combos h3 {
+    font-size: 30px;
+    font-family: Cinzel;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Container da torta */
+.combos1 , .combos2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    
+}
+.combos3{
+   display: flex;
+    justify-content: space-between; /* Alinha o título e o botão nas extremidades */
+    justify-content: left;     /* centralizado */
+    gap: 20px;                    /* espaço entre as imagens */
+    margin-top: 50px;
+    margin-left: 6.5%;
+}
+
+.combo_morangos , .combo_pretos ,   .combo_coloridos , .combo_preto_brancos , .combo_roxos , .combo_brancos , .combo_maracujas{
+    position: relative;
+    width: 361px;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.combo_morango , .combo_preto,  .combo_colorido , .combo_preto_branco , .combo_roxo , .combo_branco , .combo_maracuja {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Imagem cresce quando passa o mouse */
+.combo_morangos:hover , .combo_pretos:hover ,   .combo_coloridos:hover ,.combo_preto_brancos:hover ,.combo_roxos:hover ,.combo_brancos:hover ,.combo_maracujas:hover  {
+    transform: scale(1.15);
+}
+.combo_morangos:hover a, .combo_pretos:hover a , .combo_coloridos:hover a,.combo_preto_brancos:hover a,.combo_roxos:hover a,.combo_brancos:hover a,.combo_maracujas:hover a {
     opacity: 0;
 }
