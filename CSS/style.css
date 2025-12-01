@@ -857,7 +857,7 @@ h2{
     transition: background 0.3s ease;
     font-family: "Open Sans", sans-serif;
 }
-.botao1:hover {
+.botao11:hover {
     background: #ff7fa6;
 }
 /* ------------------Eventos---------------- */
@@ -1575,24 +1575,24 @@ h2{
 }
 
 
-.pudim_caramelos, .pudim_limaos, .pudim_ninho_nutellas , .pudim_morangos , .pudim_maracujas , .pudins {
+.pudim_caramelos, .pudim_limaos, .pudim_ninho_nutellas , .pudim_morangos , .pudim_maracujas , .pudins2 {
     position: relative;
     width: 361px;
     border-radius: 25px;
     transition: transform 0.4s ease;
 }
 
-.pudim_caramelo , .pudim_limao , .pudim_ninho_nutella , .pudim_morango , .pudim_maracuja , .pudin {
+.pudim_caramelo , .pudim_limao , .pudim_ninho_nutella , .pudim_morango , .pudim_maracuja , .pudin2 {
     width: 100%;
     border-radius: 25px;
     transition: transform 0.4s ease;
 }
 
 /* Imagem cresce quando passa o mouse */
-.pudim_caramelos:hover , .pudim_limaos:hover,.pudim_ninho_nutellas:hover ,.pudim_morangos:hover ,.pudim_maracujas:hover ,.pudins:hover  {
+.pudim_caramelos:hover , .pudim_limaos:hover,.pudim_ninho_nutellas:hover ,.pudim_morangos:hover ,.pudim_maracujas:hover ,.pudins2:hover  {
     transform: scale(1.15);
 }
-.pudim_caramelos:hover a,.pudim_limaos:hover a,.pudim_ninho_nutellas:hover a,.pudim_morangos:hover a,.pudim_maracujas:hover a,.pudins:hover a {
+.pudim_caramelos:hover a,.pudim_limaos:hover a,.pudim_ninho_nutellas:hover a,.pudim_morangos:hover a,.pudim_maracujas:hover a,.pudins2:hover a {
     opacity: 0;
 }
 
@@ -1648,24 +1648,24 @@ h2{
 }
 
 
-.biscoito_vermelhos , .biscoito_natalinos , .biscoitos , .biscoito_rosas ,.biscoito_chocolates, .biscoito_coloridos {
+.biscoito_vermelhos , .biscoito_natalinos , .biscoitos2 , .biscoito_rosas ,.biscoito_chocolates, .biscoito_coloridos {
     position: relative;
     width: 361px;
     border-radius: 25px;
     transition: transform 0.4s ease;
 }
 
-.biscoito_vermelho , .biscoito_natalino , .biscoito , .biscoito_rosa , .biscoito_chocolate , .biscoito_colorido {
+.biscoito_vermelho , .biscoito_natalino , .biscoito2 , .biscoito_rosa , .biscoito_chocolate , .biscoito_colorido {
     width: 100%;
     border-radius: 25px;
     transition: transform 0.4s ease;
 }
 
 /* Imagem cresce quando passa o mouse */
-.biscoito_vermelhos:hover , .biscoito_natalinos:hover,.biscoitos:hover ,.biscoito_rosas:hover ,.biscoito_chocolates:hover ,.biscoito_coloridos:hover  {
+.biscoito_vermelhos:hover , .biscoito_natalinos:hover,.biscoitos2:hover ,.biscoito_rosas:hover ,.biscoito_chocolates:hover ,.biscoito_coloridos:hover  {
     transform: scale(1.15);
 }
-.biscoito_vermelhos:hover a,.biscoito_natalinos:hover a,.biscoitos:hover a,.biscoito_rosas:hover a,.biscoito_chocolates:hover a,.biscoito_coloridos:hover a {
+.biscoito_vermelhos:hover a,.biscoito_natalinos:hover a,.biscoitos2:hover a,.biscoito_rosas:hover a,.biscoito_chocolates:hover a,.biscoito_coloridos:hover a {
     opacity: 0;
 }
 
