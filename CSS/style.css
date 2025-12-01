@@ -936,7 +936,7 @@ h2{
 .botao11:hover {
     background: #ff7fa6;
 }
-/* ------------------Eventos---------------- */
+/* -------------------------------------------------------------Eventos----------------------------------------------------------------------------------- */
 
 .login-box {
     background: #f8b9c9;
@@ -1062,7 +1062,7 @@ h2{
 
 /* Outros */
 .outro {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .outro input {
@@ -1079,9 +1079,62 @@ h2{
     color: #adadad;
 }
 
-/* ------------------------------------------ */
+/* Data Prevista */
+.data-prevista {
+    margin-top: 120px;
+}
 
-/* tortas --------------------------------------- */
+.data {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Caixa externa (borda rosa grande) */
+.card {
+    background-color: white;
+    padding: 10px 25px 20px 25px; 
+    width: 450px;
+    border: 3px solid #ff64b0;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* Caixa interna (borda roxa) */
+.data-prevista {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: "Cinzel", serif;
+    border: 3px solid #6c3ab8;
+    border-radius: 8px;
+    color: #333;
+    background: white;
+    margin-top: 10px;
+}
+
+/* Texto “Date” por cima da borda */
+.label-small {
+    position: absolute;
+    top: 12px;
+    left: 35px;
+    background: white;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #6c3ab8;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Remove ícone de calendário do Chrome */
+.data-prevista::-webkit-calendar-picker-indicator {
+    opacity: 0;             /* some o ícone */
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* tortas ----------------------------------------------------------------------------------- */
 .capa_tortas{
 
     background-image:
