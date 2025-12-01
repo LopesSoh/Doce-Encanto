@@ -334,7 +334,7 @@ h2{
 
 .missao-visao {
     width: 100%; 
-    height: 800px; 
+    height: 1000px; 
     position: relative; 
     background: white; 
     overflow: hidden;
@@ -342,13 +342,15 @@ h2{
 }
 
 .missao-visao h3 {
-    margin: 0 auto;
+    margin-left: 70px;
+    margin-bottom: 10px;
     text-align: center;
     color: #BD3459;
     font-family: "Cinzel", serif;
     font-size: 45px;
-    font-weight: normal;
+    font-weight: bold;
     z-index: 10;
+    text-shadow: #726b6b 0px 7px 5px; ;
 }
 
 /* FUNDO FIXO */
@@ -361,83 +363,86 @@ h2{
     z-index: 0;  /* fundo fica atrás */
 }
 
-.item {
+.missao-conteudo {
+    margin-top: 40px;
     display: flex;
-    align-items: center;
-    gap: 0;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 60px;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+/* Card inteiro */
+.missao-card {
+    width: 300px;
+    text-align: center;
+    position: relative;
+    padding-left: 20px;
     margin-left: 50px;
+    margin-top: -60px;
+    margin-bottom: -220px;
+}
+
+/* Container da imagem (para segurar a faixa rosa) */
+.img-container-missao {
     position: relative;
-}
-
-/* esconder checkbox */
-.item input {
-    display: none;
-}
-
-/* imagem + barra rosa */
-.img-box {
-    width: 120px;
-    height: 150px;
-    border-radius: 25px;
+    width: 125px;
+    height: 190px;
     overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    border-radius: 30px;
+    margin-bottom: 200px;
 }
 
-.img-box img {
+/* A imagem em si */
+.unidade-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 30px;
 }
 
-/* barra da seta */
-.btn {
+/* Faixa rosa — idêntica à da arte */
+.bnt1 {
+    top: 45px;
+    left: 40px;
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 35px;
-    height: 100%;
-    background: #E43D83;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.arrow {
-    transition: transform .4s ease;
-    transform: rotate(90deg);
-}
-
-/* CAIXA DE TEXTO QUE VAI SE ESTICAR */
-.texto {
-    background: #FF5F9E;
-    color: white;
-    border-radius: 25px;
-    padding: 20px 25px;
-
-    /* começa fechada */
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    white-space: normal;
-
-    /* para animar suavemente */
-    transition: 
-        width .5s ease,
-        opacity .4s ease;
-    margin-left: 15px;
-}
-
-/* QUANDO MARCAR O CHECKBOX → EXPANDE PRO LADO */
-.item input:checked ~ .texto {
-    width: 650px;   /* TAMANHO DA EXPANSÃO ATÉ O FINAL DA PÁGINA */
-    opacity: 1;
-}
-
-/* gira seta */
-.item input:checked + label .arrow {
+    width: 190px;
+    bottom: 245px;
+    height: 100px;
+    background: #FA63B0;
+    color: #000000;
+    cursor: pointer;
     transform: rotate(-90deg);
+    transition: 0.2s ease;
+    border-radius: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.bnt1:hover {
+    background: #FA63B0;
+    color: black;
+    top: -505px;
+    left: 580px;
+    width: 190px;
+    bottom: 245px;
+    height: 1200px;
+}
+
+.bnt1 svg{
+    margin-top: 70px;
+    margin-right: 77px;
+    height: 30px;
+    width: 30px;
+
+
+}
+
+.bnt1:hover svg{
+    margin-top: 1165px;
+    transform: rotate(180deg);
 }
 
 
@@ -455,19 +460,19 @@ h2{
 /* primeira (rosa mais forte) */
 .f1a {
     background: #FFB2C7;
-    top: 750PX;
+    top: 950PX;
 }
 
 /* segunda */
 .f2a {
     background: #FFC5D5;
-    top: 850px;
+    top: 1050px;
 }
 
 /* terceira (rosa claro) */
 .f3a {
     background: #FFD9E3;
-    top: 950px;
+    top: 1150px;
 }
 
 .faixa-2a {
