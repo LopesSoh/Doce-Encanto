@@ -1056,12 +1056,12 @@ h2{
 }
 .torta3{
     width: 100%;
-
+    display: flex;
     justify-content: space-between; /* Alinha o título e o botão nas extremidades */
     justify-content: left;     /* centralizado */
     gap: 40px;                    /* espaço entre as imagens */
     margin-top: 50px;
-    margin-left: 51px;
+    margin-left: 6.5%;
 }
 
 .torta_limaos, .torta_morango_brancos,.torta_beijinho_brigadeiros , .torta_chocolate_morangos, .torta_chocolates, .torta_maracujas, .torta_brancos{
@@ -1866,7 +1866,7 @@ h2{
     
 }
 .combos3{
-   display: flex;
+    display: flex;
     justify-content: space-between; /* Alinha o título e o botão nas extremidades */
     justify-content: left;     /* centralizado */
     gap: 20px;                    /* espaço entre as imagens */
