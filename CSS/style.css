@@ -521,7 +521,7 @@ h2{
 
 /* Faixa rosa — idêntica à da arte */
 .bnt1 {
-    top: 205px;
+    top: 45px;
     left: 40px;
     position: absolute;
     width: 190px;
@@ -540,53 +540,24 @@ h2{
 .bnt1:hover {
     background: #FA63B0;
     color: black;
-    top: -405px;
+    top: -505px;
     left: 580px;
     width: 190px;
     bottom: 245px;
     height: 1200px;
 }
 
-.bnt1 svg {
+.bnt1 svg{
     margin-top: 70px;
     margin-right: 77px;
     height: 30px;
     width: 30px;
-    z-index: 10;
-    position: relative;
+
 }
 
-.bnt1:hover svg {
-    margin-top: 40px; /* Ajuste para que a seta fique acima do texto */
+.bnt1:hover svg{
+    margin-top: 1165px;
     transform: rotate(180deg);
-}
-
-/* Estilo para o texto dentro do botão expandido */
-.bnt1 .texto-expandido {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    color: #000000;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-/* Quando o botão é hover (ou clicado), mostra o texto */
-.bnt1:hover .texto-expandido {
-    opacity: 1;
-    transform: rotate(90deg);
-}
-
-/* Ajuste a posição do texto quando o botão expandir */
-.bnt1:hover .texto-expandido {
-    top: 150px; /* Ajuste conforme necessário */
 }
 
 /* FAIXAS */
