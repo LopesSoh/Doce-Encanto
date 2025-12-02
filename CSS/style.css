@@ -1169,8 +1169,8 @@ h2{
 
 /* Quadradinho */
 .check {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #000;
     border-radius: 3px;
     display: flex;
@@ -1190,6 +1190,20 @@ h2{
 /* Insere o ✔ dentro */
 .item input[type="checkbox"]:checked + .check::before {
     content: "✔";
+}
+
+/* Coloca o ✔ quando desmarcado */
+.check::before {
+    content: "✔";
+    color: #000;           /* cor do ✔ */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Quando estiver marcado, o ✔ fica branco e visível */
+.item input[type="checkbox"]:checked + .check::before {
+    opacity: 1;
+    color: white;       
 }
 
 /* ------------------------------------------------------------------------------------------ */
