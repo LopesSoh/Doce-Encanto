@@ -65,7 +65,7 @@ que todos desde o início de tudo faziam questão de provar.
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/fbd912df-a6ab-4a85-b6d8-013347626172" width="150"><br>
+      <img src="https://github.com/user-attachments/assets/fbd912df-a6ab-4a85-b6d8-013347626172" width="120"><br>
       <a href="https://github.com/Larinha200">Lara Vitória</a>
     </td>
     <td align="center">
