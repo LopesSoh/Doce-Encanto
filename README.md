@@ -58,3 +58,26 @@ que todos desde o início de tudo faziam questão de provar.
 <br>
 
 ![Image](https://github.com/user-attachments/assets/df323e75-53df-4230-ade8-6e5cc76ffbdb)
+
+***Equipe responsável pelo site →***
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="" width="150"><br>
+      <a href="https://github.com/Larinha200">Lara Vitória</a>
+    </td>
+    <td align="center">
+      <img src="" width="150"><br>
+      <a href="https://github.com/LopesSoh">Sophia Cardoso</a>
+    </td>
+    <td align="center">
+      <img src="" width="150"><br>
+      <a href="https://github.com/lauramoraiss">Laura Morais</a>
+    </td>
+    <td align="center">
+      <img src="" width="150"><br>
+      <a href="https://github.com/Katrisbug">Katrina Bonet</a>
+    </td>
+  </tr>
+</table>
