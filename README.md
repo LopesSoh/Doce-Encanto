@@ -61,6 +61,7 @@ que todos desde o início de tudo faziam questão de provar.
 
 ***Equipe responsável pelo site →***
 
+<br>
 <table>
   <tr>
     <td align="center">
@@ -81,3 +82,7 @@ que todos desde o início de tudo faziam questão de provar.
     </td>
   </tr>
 </table>
+<br>
+
+![Image](https://github.com/user-attachments/assets/df323e75-53df-4230-ade8-6e5cc76ffbdb)
+
