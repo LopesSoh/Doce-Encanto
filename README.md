@@ -27,3 +27,7 @@ avó podesse ter um alcançe maior para conseguir chegar em seus clientes de div
 que todos desde o início de tudo faziam questão de provar.
 
 ![Image](https://github.com/user-attachments/assets/df323e75-53df-4230-ade8-6e5cc76ffbdb)
+
+***Elementos utilizados no site →***
+
+
