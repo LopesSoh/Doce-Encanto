@@ -35,5 +35,19 @@ que todos desde o início de tudo faziam questão de provar.
   <strong>Imagem da logo utilizada no site</strong>
 </p>
 
-![Image](https://github.com/user-attachments/assets/4fd1f8f7-d801-45b4-a180-86713a109e35)
-**Imagem da extensão do cardápio utilizada no site**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4fd1f8f7-d801-45b4-a180-86713a109e35" width="300"><br>
+  <strong>Imagem de extensão que leva para o cardápio, utilizada no site</strong>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a07c60b8-9522-49f2-8de3-edabdccec14a" width="300"><br>
+  <strong>Imagem da paleta de cores principal utilizada na realização do site</strong>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7dc3944f-7335-405d-8399-b18eb7a7ff3e" width="300"><br>
+  <strong>Imagem da paleta de cores secundária utilizada na realização do site</strong>
+</p>
+
+![Image](https://github.com/user-attachments/assets/df323e75-53df-4230-ade8-6e5cc76ffbdb)
