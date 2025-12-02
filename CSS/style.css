@@ -521,7 +521,7 @@ h2{
 
 /* Faixa rosa — idêntica à da arte */
 .bnt1 {
-    top: 45px;
+    top: 205px;
     left: 40px;
     position: absolute;
     width: 190px;
@@ -540,32 +540,54 @@ h2{
 .bnt1:hover {
     background: #FA63B0;
     color: black;
-    top: -505px;
+    top: -405px;
     left: 580px;
     width: 190px;
     bottom: 245px;
     height: 1200px;
 }
 
-.bnt1 svg{
+.bnt1 svg {
     margin-top: 70px;
     margin-right: 77px;
     height: 30px;
     width: 30px;
-
+    z-index: 10;
+    position: relative;
 }
 
-.bnt1:hover svg{
-    margin-top: 1165px;
+.bnt1:hover svg {
+    margin-top: 40px; /* Ajuste para que a seta fique acima do texto */
     transform: rotate(180deg);
 }
 
-.bnt1:hover p{
-    color: #ffffff;
-    font-size: 12px;
-    z-index: 30;
+/* Estilo para o texto dentro do botão expandido */
+.bnt1 .texto-expandido {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
+/* Quando o botão é hover (ou clicado), mostra o texto */
+.bnt1:hover .texto-expandido {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+/* Ajuste a posição do texto quando o botão expandir */
+.bnt1:hover .texto-expandido {
+    top: 150px; /* Ajuste conforme necessário */
+}
 
 /* FAIXAS */
 .faixa-1a {
@@ -926,7 +948,7 @@ h2{
     justify-content: left;     /* centralizado */
     gap: 40px;                    /* espaço entre as imagens */
     margin-top: 50px;
-    margin-left: 6.5%;
+    margin-left: 8.5%;
 }
 
 .tortas {
@@ -1388,7 +1410,6 @@ h2{
     background-color: #ffd4e7 !important;
     color: #e91e63 !important;
 }
-
 
 
 /* Outros */
@@ -2164,24 +2185,26 @@ h2{
 }
 
 
-.pudim_caramelos, .pudim_limaos, .pudim_ninho_nutellas , .pudim_morangos , .pudim_maracujas , .pudins2 {
+
+
+.pudim_caramelos, .pudim_limaos, .pudim_ninho_nutellas , .pudim_morangos , .pudim_maracujas , .pudim_tradicional  {
     position: relative;
     width: 361px;
     border-radius: 25px;
     transition: transform 0.4s ease;
 }
 
-.pudim_caramelo , .pudim_limao , .pudim_ninho_nutella , .pudim_morango , .pudim_maracuja , .pudin2 {
+.pudim_caramelo , .pudim_limao , .pudim_ninho_nutella , .pudim_morango , .pudim_maracuja , .pudim_tradicional  {
     width: 100%;
     border-radius: 25px;
     transition: transform 0.4s ease;
 }
 
 /* Imagem cresce quando passa o mouse */
-.pudim_caramelos:hover , .pudim_limaos:hover,.pudim_ninho_nutellas:hover ,.pudim_morangos:hover ,.pudim_maracujas:hover ,.pudins2:hover  {
+.pudim_caramelos:hover , .pudim_limaos:hover,.pudim_ninho_nutellas:hover ,.pudim_morangos:hover ,.pudim_maracujas:hover ,.pudim_tradicional:hover   {
     transform: scale(1.15);
 }
-.pudim_caramelos:hover a,.pudim_limaos:hover a,.pudim_ninho_nutellas:hover a,.pudim_morangos:hover a,.pudim_maracujas:hover a,.pudins2:hover a {
+.pudim_caramelos:hover a,.pudim_limaos:hover a,.pudim_ninho_nutellas:hover a,.pudim_morangos:hover a,.pudim_maracujas:hover a,.pudim_tradicional:hover  a {
     opacity: 0;
 }
 
@@ -2460,7 +2483,7 @@ h2{
     justify-content: left;     /* centralizado */
     gap: 20px;                    /* espaço entre as imagens */
     margin-top: 50px;
-    margin-left: 6.5%;
+    margin-left: 8.5%;
 }
 
 .combo_morangos , .combo_pretos ,   .combo_coloridos , .combo_preto_brancos , .combo_roxos , .combo_brancos , .combo_maracujas{
