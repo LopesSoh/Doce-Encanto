@@ -48,7 +48,7 @@ h2{
     font-family: "Cinzel", serif;
     font-size: 75px;
     font-weight: normal;
-    margin-top: 50px;
+    margin-top: 40px;
     text-shadow: #000000 0px 7px 6px;
 }
 
@@ -256,7 +256,116 @@ h2{
     z-index: 0;
 }
 
+/* wrapper interno centraliza e dá padding */
+.nn-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1rem 6rem;
+  color: var(--nn-number-color);
+}
 
+/* título grande e serifado como na imagem */
+.nn-title{
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin: 0 0 2.2rem;
+  font-size: 46px;
+  letter-spacing: 2px;
+  color: var(--nn-title-color);
+  text-shadow: 0 2px 0 rgba(255,255,255,0.6);
+}
+
+/* grid 2x2 */
+.nn-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.6rem 4rem;
+  align-items: center;
+}
+
+/* cartão individual (sem usar classe .card) */
+.numero-card{
+  background: transparent;
+  border-radius: 10px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 110px;
+  margin-left: 100px;
+  margin-right: 150px;
+}
+
+/* alinhamentos para posicionamento (igual sua imagem: left / right) */
+.nn-left { justify-content: flex-start; padding-left: 3.2rem; }
+.nn-right { justify-content: flex-end; padding-right: 3.2rem; }
+
+/* container do widget: define variáveis de tempo por widget (inline) */
+.counter-widget{
+  --stagger: 0.20s; /* padrão, pode ser sobrescrito inline */
+  --start: 0.12s;   /* atraso antes do primeiro caractere */
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+/* descrição pequena abaixo do número */
+.nn-desc{
+  margin-top: 0.35rem;
+  color: var(--nn-desc-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  opacity: 0.95;
+}
+
+/* elemento que contém os caracteres (número formatado já em texto) */
+.cw-text{
+  display:inline-flex;
+  align-items:baseline;
+  gap: 0.06em;
+  font-family: "Playfair Display", serif;
+  font-size: 68px;            /* tamanho principal do número */
+  line-height: 1;
+  color: var(--nn-number-color);
+  font-weight: 700;
+  white-space: nowrap;
+  margin-top: 70px;
+}
+
+/* cada caractere começa invisível; surgirá com fade + subida leve */
+.cw-char{
+  display:inline-block;
+  opacity: 0;
+  transform: translateY(8px) scale(.98);
+  will-change: opacity, transform;
+  animation: cw-appear 0.45s cubic-bezier(.2,.8,.2,1) forwards;
+  /* delay calculado: --start + i * --stagger */
+  animation-delay: calc( var(--start, 0.08s) + (var(--i, 0) * var(--stagger, 0.16s)) );
+}
+
+/* animação simples de aparecer */
+@keyframes cw-appear {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* pequeno espaçamento extra para o prefixo + */
+.cw-text .cw-char:first-child{
+  margin-right: 0.12rem;
+}
+
+/* responsividade - reduz o tamanho do número em telas menores */
+@media (max-width: 760px){
+  .nn-grid{ grid-template-columns: 1fr; gap: 1.1rem; }
+  .nn-left, .nn-right { justify-content: center; padding: 0; }
+  .cw-text{ font-size: 36px; }
+  .nn-title{ font-size: 34px; }
+}
+
+/* ---------------------------------- */
 .nossas-unidades {
     width: 100%;
     min-height: 100vh;
@@ -1247,7 +1356,7 @@ h2{
 }
 
 .select-evento option {
-    background-color: #fffff;      
+    background-color: #fff;   /* Cor do background das opçoes */
     color: #c0175a;             
 }
 
@@ -1283,14 +1392,14 @@ h2{
     margin-top: 100px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 100px;
 }
 
 /* Caixa externa (borda rosa grande) */
 .card {
     background-color: white;
     padding: 10px 25px 20px 25px; 
-    width: 450px;
+    width: 550px;
     border: 3px solid #ff64b0;
     border-radius: 20px;
     position: relative;
@@ -2369,13 +2478,30 @@ h2{
 }
 
 .quadrado{
+    display: flex;
     background-color: #fcb0c5;
     width: 100%;
     height: 350px;
     margin-top:200px;
+    font-family: 'Cinzel';
+    flex-direction: column;
+    
+    
+    
 }
 
 .quadrado img{
-    width: 20px;
+    display: flex;
+    justify-content: left;
+    margin-left: 25px;
+    width: 190px;
+}
+.quadrado a{
+    text-decoration: none;
+    color: #000000;
     
+}
+
+.icons1 , .icons2 , .icons3 ,.icons4 {
+    margin-left:30px;
 }
