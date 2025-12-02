@@ -30,8 +30,10 @@ que todos desde o início de tudo faziam questão de provar.
 
 ***Elementos utilizados no site →***
 
-![Image](https://github.com/user-attachments/assets/aa655d21-7974-469f-924a-263e67a5a334)
-**Imagem da logo utilizada no site**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aa655d21-7974-469f-924a-263e67a5a334" width="300"><br>
+  <strong>Imagem da logo utilizada no site</strong>
+</p>
 
 ![Image](https://github.com/user-attachments/assets/4fd1f8f7-d801-45b4-a180-86713a109e35)
 **Imagem da extensão do cardápio utilizada no site**
