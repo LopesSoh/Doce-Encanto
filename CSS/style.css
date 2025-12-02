@@ -548,7 +548,7 @@ h2{
     z-index: 10;
 }
 
-.card {
+.card1 {
     margin-left: 50px;
     position: relative;
     display: inline-flex;
@@ -559,7 +559,7 @@ h2{
 
 }
 
-.card img {
+.card1 img {
     width: 170px;
     height: 190px;
     object-fit: cover;
@@ -587,13 +587,13 @@ h2{
 }
 
 /* Aparece quando passa o mouse */
-.card:hover .tooltip {
+.card1:hover .tooltip {
     bottom: 35px;
     opacity: 1;
     width: 200px;
 }
 
-.card img:hover{
+.card1 img:hover{
     transform: scale(1.09);
     transition: transform 0.4s ease;
     filter: blur(1px);
@@ -1400,7 +1400,26 @@ h2{
     margin-top: 100px;
 }
 
-/*  */
+/* Detalhes Especiais */
+.detalhes {
+    margin-top: 100px;
+}
+
+.detalhes textarea {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #ff8ac0;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: "Cinzel", serif;
+    margin-bottom: 10px;
+    height: 300px;
+    line-height: 1.4; 
+}
+
+.detalhes textarea::placeholder {
+    color: #adadad;
+}
 
 /* ------------------------------------------------------------------------------------------ */
 
@@ -2292,4 +2311,24 @@ h2{
 }
 .combo_morangos:hover a, .combo_pretos:hover a , .combo_coloridos:hover a,.combo_preto_brancos:hover a,.combo_roxos:hover a,.combo_brancos:hover a,.combo_maracujas:hover a {
     opacity: 0;
+}
+
+
+.botao-cardapio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: inline-block;
+}
+
+.botao-cardapio img {
+    width: 120px;     
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-cardapio img:hover {
+    transform: scale(1.1);
 }
