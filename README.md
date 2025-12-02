@@ -65,19 +65,19 @@ que todos desde o início de tudo faziam questão de provar.
 <table>
   <tr>
     <td align="center">
-      <img src="![Image](https://github.com/user-attachments/assets/fbd912df-a6ab-4a85-b6d8-013347626172)" width="150"><br>
+      <img src="https://github.com/user-attachments/assets/fbd912df-a6ab-4a85-b6d8-013347626172" width="120"><br>
       <a href="https://github.com/Larinha200">Lara Vitória</a>
     </td>
     <td align="center">
-      <img src="![Image](https://github.com/user-attachments/assets/eff22222-b65d-45ea-9f09-d4f5e018f360)" width="150"><br>
+      <img src="https://github.com/user-attachments/assets/eff22222-b65d-45ea-9f09-d4f5e018f360" width="120"><br>
       <a href="https://github.com/LopesSoh">Sophia Cardoso</a>
     </td>
     <td align="center">
-      <img src="![Image](https://github.com/user-attachments/assets/f0970a6d-406a-433e-b1ef-5103972f603c)" width="150"><br>
+      <img src="https://github.com/user-attachments/assets/f0970a6d-406a-433e-b1ef-5103972f603c" width="120"><br>
       <a href="https://github.com/lauramoraiss">Laura Morais</a>
     </td>
     <td align="center">
-      <img src="![Image](https://github.com/user-attachments/assets/f0e2d413-294d-4295-9b98-fdf258241ff5)" width="150"><br>
+      <img src="https://github.com/user-attachments/assets/f0e2d413-294d-4295-9b98-fdf258241ff5" width="120"><br>
       <a href="https://github.com/Katrisbug">Katrina Bonet</a>
     </td>
   </tr>
